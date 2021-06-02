@@ -1,23 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>developer tool</title>
+    <title>raj fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
     <style>
-        p{
-            color: blanchedalmond;
-            background-color: blue;
+        /* css reset */
+        body {
+            font-family: 'Baloo Tammudu 2', cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('t.jpg');
+            background-size: 1700px;
 
+
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            left: 54px;
+            top: 20px;
+        }
+
+        .mid {
+            display: block;
+            width: 33%;
+            margin: 40px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 28px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+        }
+
+        .navbar li {
+
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 34px 18px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: #62acd2;
+        }
+
+        .left img {
+            width: 93px;
+            filter: invert(100%);
+
+
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 5px;
+            font-size: 30px;
+
+
+        }
+
+        .btn {
+            font-family: 'Baloo Tammudu 2', cursive;
+
+
+            margin: 2px 9px;
+
+            background-color: black;
+            color: white;
+            padding: 5px 14px;
+            border: 2px solid grey;
+            border-radius: 14px;
+            font-size: 15px;
+            cursor: pointer;
+
+
+        }
+
+        .btn:hover {
+            background-color: grey;
+        }
+
+        .container {
+            border: 2px solid green;
+            margin: 95px 125px;
+            padding: 2px 2px;
+            width: 33%;
+            border-radius: 2px;
+            border-color: white;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .form-group input {
+            display: block;
+            text-align: center;
+            margin: 12px 130px;
+            padding: 4px;
+            border-color: black;
+            font-size: 18px;
+            border-radius: 12px;
+            font-family: 'Baloo Tammudu 2', cursive;
+        }
+
+        .container button {
+            display: block;
+            margin: auto;
+            width: 20%;
         }
     </style>
 </head>
 
 <body>
-    <!-- right click karun inspect karaych -->
-    <h1>developer tool tutorial</h1>
-    <p>this is tutorial of chrome developer tool</p>
+    <header class="header">
+
+        <div class="left">
+
+            <img src="logo.png" alt="">
+            <div>Raj fitness</div>
+
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">fitness calcultor</a></li>
+                <li><a href="#">contact us</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">Call us ☎️</button><button class="btn">Email us 📩</button>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <h1>join the best gym of pune now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your name">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your age">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your gender">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your locality">
+            </div>
+
+            <div class="form-group">
+                <input type="text" name="" placeholder="enter your phone no">
+            </div>
+
+            <button class="btn">
+                submit
+            </button>
+        </form>
+    </div>
 </body>
+
 </html>
